@@ -11,28 +11,130 @@ body{
 /**** MEDIA QUERY - RESPONSIVE DESIGN ****/
 
 
-/**** HEADER ****/
+/**** COMMONS ****/
+.container{
+    width: 100%;
+}
 
+.row{
+    display: flex;
+    flex-direction: column;
+}
+
+.col{
+    margin: 10px 20px 10px 20px;
+    border-radius: 25px;
+}
+
+/**** HEADER ****/
+header{
+    background-color: #0084FD;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col-header{
+    background-color: red;
+}
 
 /**** MAIN ****/
 
 
 /* CONTAINER JUMBOTRON */
+.col-jumbo{
+    background-color: #B5DDFF;
+    height: 200px;
+}
 
+.col-jumbo:first-child{
+    height: 400px;
+}
 
-/* CONTAINER BG VIOLE */
+/* CONTAINER BG PLANNING */
+.bg-violet{
+    background-color: #9792E4;
+}
 
+.col-planning{
+    background-color: white;
+    margin-bottom: 40px;
+    height: 400px;
+}
 
 /* CONTAINER TESTIMONIALS */
+h4{
+    background-color: black;
+    height: 50px;
+    margin: 20px 0 20px 0;
+}
 
+h2{
+    background-color: blue;
+    height: 75px;
+    margin: 20px 0 20px 0;
+}
+
+p{
+    background-color: lightgray;
+    height: 100px;
+    margin: 20px 0 20px 0;
+}
+
+.col-testimonials{
+    background-color: #9792E4;
+    height: 350px;
+}
+
+.col-testimonials:last-child{
+    margin-bottom: 50px;
+}
 
 /* CONTAINER BENEFITS */
+.col-benefits{
+    background-color: white;
+    height: 200px;
+}
 
+.col-benefits:last-child {
+    margin-bottom: 50px;
+}
 
 /* CONTAINER ABOUT US */
+.col-about{
+    background-color: yellow;
+    height: 200px;
+}
 
+.col-about:first-child{
+    height: 500px;
+    margin-top: 40px;
+}
+
+.col-about:last-child {
+    margin-bottom: 40px;
+}
 
 /* CONTAINER GET STARTED */
+.col-started{
+    background-color: white;
+    margin: 40px 20px 40px 20px;
+}
 
+h1{
+    background-color: orange;
+}
+
+button{
+    background-color: #9792E4;
+}
 
 /**** FOOTER ****/
+footer{
+    background-color: gray;
+    height: 100px;
+}
