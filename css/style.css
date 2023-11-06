@@ -38,7 +38,51 @@ header{
 
 .content-header {
     display: flex;
-    justify-content: space-around;
+}
+
+.img-header{
+    width: 100px;
+}
+
+.col-header{
+    padding: 15px;
+}
+
+.fa-bars{
+    color:  white;
+    font-size: 35px;
+}
+
+.col-hamburger{
+    text-align: end;   
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+    color: white;
+}
+
+button {
+    background-color: white;
+    color: black;
+    padding: 7px 15px 7px 15px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 2px;
 }
 
 /**** MAIN ****/
@@ -134,10 +178,6 @@ h1{
     height: 90px;
 }
 
-button{
-    background-color: #9792E4;
-}
-
 /**** FOOTER ****/
 footer{
     background-color: gray;
@@ -177,19 +217,27 @@ footer{
         width: 1000px;
         margin: 0 auto;
     }
+
+    .col-header{
+        width: 20%;
+    }
+
+    .col-hamburger{
+        width: 80%;
+    }
+
+    .show{
+        display: none;
+    }
+
+    .hidden{
+        display: block;
+    }
     
     .row{
         justify-content: center;
         margin: 0 auto;
         width: 1000px;
-    }
-
-    .col-jumbo {
-        width: calc(100% / 3 - 40px);
-    }
-
-    .col-img {
-        width: calc(100% / 3 * 2 - 40px);
     }
     
     .col-planning{
