@@ -60,6 +60,18 @@ img{
     padding: 0;
 }
 
+.color-purple{
+    color: #9792E4;
+    font-size: 60px;
+    position: relative;
+    top: -150px;
+    left: 225px;
+}
+
+.fa-linkedin{
+    color: white;
+    font-size: 15px;
+}
 
 /**** HEADER ****/
 header{
@@ -252,20 +264,19 @@ h6{
 }
 
 /* CONTAINER ABOUT US */
-.col-about{
-    background-color: yellow;
-    height: 200px;
+.about-us{
+    margin: 10px 10px 40px 10px;
+    text-align: start;
 }
 
-.col-about:first-child{
-    height: 500px;
-    margin-top: 40px;
+.title-left{
+    text-align: start;
+    padding-top: 20px;
 }
 
-.col-about:last-child {
-    margin-bottom: 40px;
+.button-linkedin{
+    width: 70%;
 }
-
 
 /* CONTAINER GET STARTED */
 .col-started{
@@ -342,15 +353,35 @@ footer{
     /* CONTAINER BENEFITS TABLET */
     .col-benefits {
         width: calc(100% / 2 - 20px);
+        margin-bottom: 40px;
+    }
+
+    .col-benefits:last-child {
+        margin-bottom: auto;
     }
 
     /* CONTAINER ABOUT US TABLET */
-    .col-about{
-        width: calc(100% / 2 - 20px);
+    .col-left{
+        width: calc(100% - 30% - 20px);
     }
 
-    .col-about:last-child {
-    margin: 40px 0 0 10px;
+    .col-right{
+        width: calc(100% - 70% - 20px);
+    }
+
+    .img-about{
+        float: none;
+        width: 215px;
+        height: 190px;
+    }
+
+    .color-purple{
+        top: 65px;
+        left: 180px;
+    }
+
+    .button-linkedin{
+        width: 100%;
     }
 }    
 
@@ -405,6 +436,14 @@ footer{
     /* CONTAINER BENEFITS DESKTOP */
     .col-benefits{
         width: calc(100% / 3 - 20px);
+        margin-bottom: 40px;
     }
+
+    .col-benefits:last-child {
+       margin-bottom: auto;
+    }
+
+    /* CONTAINER ABOUT US DESKTOP */
+    
 
 }
