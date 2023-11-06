@@ -9,7 +9,29 @@ body{
 }
 
 /**** MEDIA QUERY - RESPONSIVE DESIGN ****/
+@media screen and (min-width:768px){
+    .container{
+        width: 768px;
+    }
 
+    .row{
+        flex-wrap: nowrap;
+    }
+
+    .col,
+    .col-img{
+        width: calc(100% / 3 * 2 - 20px);
+    }
+
+    .col,
+    .col-jumbo{
+        width: calc(100% / 3 - 20px);
+    }
+
+    .col-benefits{
+        width: calc(100% / 2 - 20px);
+    }
+}
 
 /**** COMMONS ****/
 .container{
@@ -18,12 +40,13 @@ body{
 
 .row{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .col{
     margin: 10px 20px 10px 20px;
     border-radius: 25px;
+    width: 100%;
 }
 
 /**** HEADER ****/
@@ -51,7 +74,8 @@ header{
     height: 200px;
 }
 
-.col-jumbo:first-child{
+.col-img{
+    background-color: #B5DDFF;
     height: 400px;
 }
 
