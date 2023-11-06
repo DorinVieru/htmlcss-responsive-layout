@@ -190,6 +190,7 @@ h2{
     color: #9792E4;
     font-size: 35px;
     margin: 20px 0 20px 0;
+    text-align: center;
 }
 
 .col-testimonials{
@@ -215,13 +216,40 @@ h2{
 /* CONTAINER BENEFITS */
 .col-benefits{
     background-color: white;
-    height: 200px;
+    padding: 20px;
 }
 
 .col-benefits:last-child {
     margin-bottom: 50px;
 }
 
+.white{
+    color: white;
+    padding: 40px;
+}
+
+.number{
+    color: #9792E4;
+    font-size: 50px;
+    margin: 30px 0;
+    font-weight: 900
+}
+
+h6{
+    color: #9792E4;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.button-more{
+    background-color: #9792E4;
+    color: white;
+    width: 50%;
+    padding: 15px 0;
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
 
 /* CONTAINER ABOUT US */
 .col-about{
@@ -366,7 +394,7 @@ footer{
     
     /* CONTAINER PLANNING DESKTOP */
     .col-planning{
-        width: calc(100% / 2 - 20px);
+        width: calc(100% / 2 - 60px);
     }
 
     /* CONTAINER TESTIMONIALS DESKTOP */
@@ -374,6 +402,7 @@ footer{
         margin: 5px 30px 40px 10px;
     }
 
+    /* CONTAINER BENEFITS DESKTOP */
     .col-benefits{
         width: calc(100% / 3 - 20px);
     }
