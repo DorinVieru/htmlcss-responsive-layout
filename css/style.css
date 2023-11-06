@@ -29,6 +29,7 @@ img{
     width: 100%;
 }
 
+/* ICON SETTINGS */
 .fa-solid {
     font-size: 90px;
     padding: 20px 0;
@@ -39,6 +40,15 @@ img{
     color: white;
     font-size: 35px;
     padding: 5px 0;
+}
+
+.fa-arrow-down{
+    color: black;
+    font-size: 25px;
+    background-color: #9792E4;
+    border-radius: 50%;
+    padding: 20px;
+    margin-top: 15px;
 }
 
 /**** HEADER ****/
@@ -138,17 +148,27 @@ p{
 }
 
 .col-planning{
-    background-color: white;
     margin-bottom: 40px;
-    height: 400px;
+    color: white;
+}
+
+.col-plan-white{
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 28px;
+    margin: 20px 0 20px 0;
+}
+
+.black{
+    color: black;
 }
 
 /* CONTAINER TESTIMONIALS */
-h4{
-    background-color: black;
-    height: 50px;
-    margin: 20px 0 20px 0;
-}
+
 
 h2{
     background-color: blue;
@@ -232,6 +252,16 @@ footer{
         width: calc(100% / 3 - 20px);
     }
 
+    /* CONTAINER PLANNING TABLET */
+    .col-planning{
+        padding: 15px;
+        margin-bottom: 40px;
+    }
+
+    .img-planning{
+        padding: 5rem;
+    }
+
     /* CONTAINER BENEFITS TABLET */
     .col-benefits {
         width: calc(100% / 2 - 20px);
@@ -283,6 +313,7 @@ footer{
         float: right;
     }
     
+    /* CONTAINER PLANNING DESKTOP */
     .col-planning{
         width: calc(100% / 2 - 20px);
     }
@@ -290,4 +321,5 @@ footer{
     .col-benefits{
         width: calc(100% / 3 - 20px);
     }
+
 }
