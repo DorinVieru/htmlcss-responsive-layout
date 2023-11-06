@@ -25,6 +25,10 @@ body{
     width: 100%;
 }
 
+img{
+    width: 100%;
+}
+
 /**** HEADER ****/
 header{
     background-color: #0084FD;
