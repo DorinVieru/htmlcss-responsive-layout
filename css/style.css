@@ -8,6 +8,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+
 /**** COMMONS ****/
 .container{
     width: 100%;
@@ -28,6 +29,7 @@ body{
 img{
     width: 100%;
 }
+
 
 /* ICON SETTINGS */
 .fa-solid {
@@ -50,6 +52,14 @@ img{
     padding: 20px;
     margin-top: 15px;
 }
+
+.fa-quote-left,
+.fa-quote-right{
+    color: white;
+    font-size: 15px;
+    padding: 0;
+}
+
 
 /**** HEADER ****/
 header{
@@ -104,7 +114,6 @@ button {
 
 /**** MAIN ****/
 
-
 /* CONTAINER JUMBOTRON */
 .jumbotron{
     text-align: center;
@@ -141,7 +150,6 @@ p{
 }
 
 
-
 /* CONTAINER BG PLANNING */
 .bg-violet{
     background-color: #9792E4;
@@ -167,23 +175,42 @@ h4 {
     color: black;
 }
 
-/* CONTAINER TESTIMONIALS */
 
+/* CONTAINER TESTIMONIALS */
+.testimonial{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.h4-testimonials{
+    font-size: 20px;
+}
 
 h2{
-    background-color: blue;
-    height: 75px;
+    color: #9792E4;
+    font-size: 35px;
     margin: 20px 0 20px 0;
 }
 
 .col-testimonials{
     background-color: #9792E4;
-    height: 350px;
+    color: white;
 }
 
 .col-testimonials:last-child{
     margin-bottom: 50px;
 }
+
+.p-testimonial{
+    padding: 20px 0;
+}
+
+.img-testimonial{
+    border-radius: 100%;
+    width: 230px;
+    height: 200px;
+}
+
 
 /* CONTAINER BENEFITS */
 .col-benefits{
@@ -194,6 +221,7 @@ h2{
 .col-benefits:last-child {
     margin-bottom: 50px;
 }
+
 
 /* CONTAINER ABOUT US */
 .col-about{
@@ -210,6 +238,7 @@ h2{
     margin-bottom: 40px;
 }
 
+
 /* CONTAINER GET STARTED */
 .col-started{
     background-color: white;
@@ -221,6 +250,7 @@ h1{
     height: 90px;
 }
 
+
 /**** FOOTER ****/
 footer{
     background-color: gray;
@@ -229,6 +259,8 @@ footer{
 }
 
 /**** MEDIA QUERY - RESPONSIVE DESIGN ****/
+
+/* RESPONSIVE TABLET */
 @media screen and (min-width:768px) {
     /* COMMONS TABLET */
     .col{
@@ -255,11 +287,28 @@ footer{
     /* CONTAINER PLANNING TABLET */
     .col-planning{
         padding: 15px;
-        margin-bottom: 40px;
+        margin: 10px 30px 40px 30px;
     }
 
     .img-planning{
         padding: 5rem;
+    }
+
+    /* CONTAINER TESTIMONIALS TABLET */
+    .img-testimonial{
+        float: left;
+        width: 150px;
+        height: 120px;
+        margin: 10px;
+    }
+
+    .col-testimonials{
+        text-align: start;
+        padding-top: 25px;
+    }
+
+    .p-testimonial{
+        padding: 10px;
     }
 
     /* CONTAINER BENEFITS TABLET */
@@ -277,6 +326,8 @@ footer{
     }
 }    
 
+
+/* RESPONSIVE DESKTOP */
 @media screen and (min-width: 1200px) {
     /* HEADER DESKTOP */
     .content-header{
@@ -316,6 +367,11 @@ footer{
     /* CONTAINER PLANNING DESKTOP */
     .col-planning{
         width: calc(100% / 2 - 20px);
+    }
+
+    /* CONTAINER TESTIMONIALS DESKTOP */
+    .img-testimonial{
+        margin: 5px 30px 40px 10px;
     }
 
     .col-benefits{
