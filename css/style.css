@@ -8,22 +8,21 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-/**** MEDIA QUERY - RESPONSIVE DESIGN ****/
-
-
 /**** COMMONS ****/
 .container{
     width: 100%;
+    margin: 0 auto;
 }
 
 .row{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .col{
     margin: 10px 20px 10px 20px;
     border-radius: 25px;
+    width: 100%;
 }
 
 /**** HEADER ****/
@@ -40,18 +39,24 @@ header{
 
 .col-header{
     background-color: red;
+    height: 75px;
 }
 
 /**** MAIN ****/
 
 
 /* CONTAINER JUMBOTRON */
+.jumbotron{
+    text-align: center;
+}
+
 .col-jumbo{
     background-color: #B5DDFF;
     height: 200px;
 }
 
-.col-jumbo:first-child{
+.col-img{
+    background-color: #B5DDFF;
     height: 400px;
 }
 
@@ -127,6 +132,7 @@ p{
 
 h1{
     background-color: orange;
+    height: 90px;
 }
 
 button{
@@ -136,5 +142,62 @@ button{
 /**** FOOTER ****/
 footer{
     background-color: gray;
+    text-align: center;
     height: 100px;
+}
+
+/**** MEDIA QUERY - RESPONSIVE DESIGN ****/
+@media screen and (min-width:768px) {
+    .col{
+        margin: 10px;
+    }
+
+    .col-img {
+        width: calc(100% / 3 * 2 - 20px);
+    }
+
+    .col-jumbo {
+        width: calc(100% / 3 - 20px);
+    }
+
+    .col-benefits {
+        width: calc(100% / 2 - 20px);
+    }
+
+    .col-about{
+        width: calc(100% / 2 - 20px);
+    }
+
+    .col-about:last-child {
+    margin: 40px 0 0 10px;
+    }
+}    
+
+@media screen and (min-width: 1200px) {
+    .content-header{
+        width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .row{
+        justify-content: center;
+        margin: 0 auto;
+        width: 1000px;
+    }
+
+    .col-jumbo {
+        width: calc(100% / 3 - 40px);
+    }
+
+    .col-img {
+        width: calc(100% / 3 * 2 - 40px);
+    }
+    
+    .col-planning{
+        width: calc(100% / 2 - 20px);
+    }
+
+    .col-benefits{
+        width: calc(100% / 3 - 20px);
+    }
 }
