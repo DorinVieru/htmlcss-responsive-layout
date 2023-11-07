@@ -237,7 +237,7 @@ h2{
 
 .white{
     color: white;
-    padding: 40px;
+    padding: 40px 10px;
 }
 
 .number{
@@ -280,27 +280,51 @@ h6{
 
 /* CONTAINER GET STARTED */
 .col-started{
-    background-color: white;
+    color: white;
     margin: 40px 20px 40px 20px;
+    text-align: center;
 }
 
 h1{
-    background-color: orange;
-    height: 90px;
+    color: orange;
+    font-size: 40px;
+    font-weight: 900;
+    padding-bottom: 30px;
 }
 
+.h4-started{
+    font-weight: 100;
+    margin: 0;
+}
+
+.button-white{
+    background-color: white;
+    color: #9792E4;
+    margin: 20px 0;
+    width: 40%;
+}
 
 /**** FOOTER ****/
 footer{
-    background-color: gray;
+    background-color: rgb(80, 79, 79);
     text-align: center;
-    height: 100px;
+    color: white;
+    text-align: center;
+}
+
+a{
+    color: #9792E4;
+}
+
+.col-footer{
+    margin: 0;
+    padding: 40px 20px;
 }
 
 /**** MEDIA QUERY - RESPONSIVE DESIGN ****/
 
 /* RESPONSIVE TABLET */
-@media screen and (min-width:768px) {
+@media screen and (min-width: 750px) {
     /* COMMONS TABLET */
     .col{
         margin: 10px;
@@ -383,11 +407,25 @@ footer{
     .button-linkedin{
         width: 100%;
     }
+
+    /* CONTAINER GET STARTED TABLET */
+    .col-started{
+        width: 70%;
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+
+    /* CONTAINER FOOTER TABLET */
+    .col-footer {
+        width: 70%;
+        margin: 0 auto;
+        padding: 40px 0;
+    }
 }    
 
 
 /* RESPONSIVE DESKTOP */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1050px) {
     /* HEADER DESKTOP */
     .content-header{
         width: 1000px;
@@ -415,7 +453,7 @@ footer{
     .row{
         justify-content: center;
         margin: 0 auto;
-        width: 1000px;
+        width: 991px;
     }
 
     /* JUMBOTRON DESKTOP */
@@ -443,7 +481,17 @@ footer{
        margin-bottom: auto;
     }
 
-    /* CONTAINER ABOUT US DESKTOP */
-    
+    /* CONTAINER GET STARTED DESKTOP */
+    .col-started {
+        width: 70%;
+        margin: 0 auto;
+        padding: 40px 0;
+    }
 
+    /* CONTAINER FOOTER DESKTOP */
+    .col-footer {
+        width: 70%;
+        margin: 0 auto;
+        padding: 40px 0;
+     }
 }
