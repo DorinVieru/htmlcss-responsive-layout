@@ -466,6 +466,19 @@ a{
         width: calc(100% / 2 - 60px);
     }
 
+    .col-plan-white{
+        margin-top: 200px;
+        padding-bottom: 30px;
+    }
+
+    .img-planning{
+        padding: 0;
+    }
+
+    .img-plan-white{
+        width: 50%;
+    }
+
     /* CONTAINER TESTIMONIALS DESKTOP */
     .img-testimonial{
         margin: 5px 30px 40px 10px;
